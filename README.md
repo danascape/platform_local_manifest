@@ -12,4 +12,5 @@
 | Xiaomi Pad 7 | pipa | -      | -    |
 | Redmi Note 3S | land | -      | -    |
 | Lava Agni 2 5G | - | -      | -    |
-| Nothing Phone 1 | - | -      | -    |
+| Nothing Phone 1 | Spacewar | -      | -    |
+| Nothing Phone 2 | Pong | -      | -    |
