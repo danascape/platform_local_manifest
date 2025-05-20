@@ -7,5 +7,6 @@
 | Redmi Note 8  | ginkgo | -      | -    |
 | OnePlus Nord N10  | billie | -      | -    |
 | Google Pixel 3a  | sargo | -      | -    |
+| Google Pixel 3a XL  | bonito | -      | -    |
 
 ---
