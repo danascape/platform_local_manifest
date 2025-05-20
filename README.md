@@ -14,3 +14,8 @@
 | Lava Agni 2 5G | - | -      | -    |
 | Nothing Phone 1 | Spacewar | -      | -    |
 | Nothing Phone 2 | Pong | -      | -    |
+
+
+## Embedded Devices
+* TI AM62X
+* Raspberry PI 3B+/4B/5
