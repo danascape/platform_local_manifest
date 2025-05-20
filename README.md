@@ -5,5 +5,6 @@
 | Asus Max M1  | - | -      | -    |
 | Asus Max M2  | - | -      | -    |
 | Redmi Note 8  | - | -      | -    |
+| OnePlus Nord N10  | - | -      | -    |
 
 ---
