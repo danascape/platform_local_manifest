@@ -8,5 +8,4 @@
 | OnePlus Nord N10  | billie | -      | -    |
 | Google Pixel 3a  | sargo | -      | -    |
 | Google Pixel 3a XL  | bonito | -      | -    |
-
----
+| Google Pixel 7  | panther | -      | -    |
