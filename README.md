@@ -11,3 +11,4 @@
 | Google Pixel 7  | panther | -      | -    |
 | Xiaomi Pad 7 | pipa | -      | -    |
 | Redmi Note 3S | land | -      | -    |
+| Lava Agni 2 5G | - | -      | -    |
