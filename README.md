@@ -13,6 +13,7 @@
 | Redmi Note 3S | land | -      | -    |
 | Lava Agni 2 5G | - | -      | -    |
 | Nothing Phone 1 | Spacewar | -      | -    |
+| Nothing Phone 3a | Asteroids | -      | -    |
 
 
 ## Embedded Devices
