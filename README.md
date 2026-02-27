@@ -13,11 +13,12 @@
 | Redmi Note 3S | land | -      | -    |
 | Lava Agni 2 5G | - | -      | -    |
 | Nothing Phone 1 | Spacewar | -      | -    |
-| Nothing Phone 3a | Asteroids | -      | -    |
+| Nothing Phone 3a | Asteroids | -      | 16    |
 
 
 ## Embedded Devices
 * TI AM62X
 * Raspberry PI 3B+/4B/5/CM5
+
 
 
