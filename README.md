@@ -17,7 +17,7 @@
 | Nothing Phone 1 | Spacewar | -      | -    |
 | Nothing Phone 3a | Asteroids | -      | 16    |
 | iPhone 15 | - | -      | -    |
-| Iphone 17 Pro | - | -      | -    |
+| iPhone 17 Pro | - | -      | -    |
 
 
 ## Embedded Devices
