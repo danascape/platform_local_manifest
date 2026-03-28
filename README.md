@@ -11,6 +11,7 @@
 | Google Pixel 7  | panther | -      | 13,14,15,16    |
 | Xiaomi Pad 6 | pipa | -      | 14,15    |
 | Redmi Note 3S | land | -      | -    |
+| Redmi Note 8 Pro | begonia | -      | -    |
 | Lava Agni 2 5G | - | -      | -    |
 | Nothing Phone 1 | Spacewar | -      | -    |
 | Nothing Phone 3a | Asteroids | -      | 16    |
