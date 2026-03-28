@@ -9,6 +9,7 @@
 | Google Pixel 3a  | sargo | -      | 12    |
 | Google Pixel 3a XL  | bonito | -      | 15    |
 | Google Pixel 7  | panther | -      | 13,14,15,16    |
+| Google Pixel 9  | tokay | -      | 16    |
 | Xiaomi Pad 6 | pipa | -      | 14,15    |
 | Redmi Note 3S | land | -      | -    |
 | Redmi Note 8 Pro | begonia | -      | -    |
