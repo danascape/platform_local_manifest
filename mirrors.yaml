@@ -100,6 +100,13 @@ repos:
     targets:
       - https://github.com/danascape-projects/proprietary_vendor_asus_X00P
 
+  - source: https://github.com/danascape/sworkflow
+    branches: [main]
+    targets:
+      - https://github.com/sworkflow-project/sworkflow
+      - https://github.com/danascape-projects/sworkflow
+      - https://github.com/stormbreaker-project/sworkflow
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
