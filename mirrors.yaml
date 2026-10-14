@@ -53,16 +53,19 @@ repos:
     branches: [lineage-24.0]
     targets:
       - https://github.com/danascape-projects/android_device_nothing_asteroids
+      - https://github.com/nothing-sm7635-devs/android_device_nothing_asteroids
 
   - source: https://github.com/danascape/platform_hardware_nothing
     branches: [lineage-24.0]
     targets:
       - https://github.com/danascape-projects/android_hardware_nothing
+      - https://github.com/nothing-sm7635-devs/android_hardware_nothing
 
   - source: https://github.com/danascape/proprietary_vendor_nothing_asteroids
     branches: [lineage-24.0]
     targets:
       - https://github.com/danascape-projects/proprietary_vendor_nothing_asteroids
+      - https://github.com/nothing-sm7635-devs/proprietary_vendor_nothing_asteroids
 
   - source: https://github.com/danascape/android_device_asus_X01AD
     branches: &x01ad_branches
