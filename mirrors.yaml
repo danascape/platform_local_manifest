@@ -49,6 +49,16 @@ repos:
       - https://github.com/oneplus-sm6350-devs/proprietary_vendor_oneplus_billie
       - https://github.com/danascape-projects/proprietary_vendor_oneplus_billie
 
+  - source: https://github.com/danascape/android_device_nothing_asteroids
+    branches: [lineage-24.0]
+    targets:
+      - https://github.com/danascape-projects/android_device_nothing_asteroids
+
+  - source: https://github.com/danascape/platform_hardware_nothing
+    branches: [lineage-24.0]
+    targets:
+      - https://github.com/danascape-projects/android_hardware_nothing
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
