@@ -76,6 +76,12 @@ repos:
       - https://github.com/danascape-projects/android_device_asus_X01AD
       - https://github.com/asus-sdm632-devs/android_device_asus_X01AD
 
+  - source: https://github.com/danascape/proprietary_vendor_asus_X01AD
+    branches: *x01ad_branches
+    targets:
+      - https://github.com/asus-sdm632-devs/proprietary_vendor_asus_X01AD
+      - https://github.com/danascape-projects/proprietary_vendor_asus_X01AD
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
