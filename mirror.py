@@ -197,7 +197,8 @@ def main():
     p.add_argument("-j", "--jobs", type=int, default=4, help="repos to sync in parallel")
     p.add_argument("-n", "--dry-run", action="store_true")
     p.add_argument("--only", action="append", default=[],
-                   help="only sync repos whose source URL contains this text (repeatable)")
+                   help="only sync the repo with this exact name, or else repos whose source URL "
+                        "contains this text (repeatable)")
     args = p.parse_args()
 
     try:
@@ -205,7 +206,12 @@ def main():
     except (OSError, ValueError, yaml.YAMLError) as e:
         sys.exit(f"config error: {e}")
     if args.only:
-        repos = [r for r in repos if any(s in r.source for s in args.only)]
+        names = {r.name for r in repos}
+
+        def selected(r):
+            # An exact repo name selects just that repo; anything else matches part of the URL.
+            return any(r.name == s if s in names else s in r.source for s in args.only)
+        repos = [r for r in repos if selected(r)]
     if not repos:
         sys.exit("no repos selected")
 
