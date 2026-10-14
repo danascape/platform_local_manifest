@@ -5,7 +5,7 @@
 | Asus Max M1  | X00P/X00PD | -      | 8,9,10,11,12    |
 | Asus Max M2  | X01A/X01AD | -     | 9,10,11,12,13    |
 | Redmi Note 8  | ginkgo | -      | 10,11,12,13,14    |
-| OnePlus Nord N10  | billie | -      | 10,11,12,13,14,15,16    |
+| OnePlus Nord N10  | billie | -      | 10,11,12,13,14,15,16,17    |
 | Google Pixel 3a  | sargo | -      | 12    |
 | Google Pixel 3a XL  | bonito | -      | 15    |
 | Google Pixel 7  | panther | -      | 13,14,15,16    |
