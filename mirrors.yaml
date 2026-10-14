@@ -64,6 +64,18 @@ repos:
     targets:
       - https://github.com/danascape-projects/proprietary_vendor_nothing_asteroids
 
+  - source: https://github.com/danascape/android_device_asus_X01AD
+    branches: &x01ad_branches
+      - lineage-17.1-preb
+      - lineage-17.1
+      - lineage-18.1
+      - lineage-19.0
+      - lineage-19.1
+      - lineage-20
+    targets:
+      - https://github.com/danascape-projects/android_device_asus_X01AD
+      - https://github.com/asus-sdm632-devs/android_device_asus_X01AD
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
