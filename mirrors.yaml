@@ -122,6 +122,11 @@ repos:
     targets:
       - https://github.com/danascape-projects/furoreScanApp
 
+  - source: https://github.com/danascape/GardenWatch
+    branches: [master]
+    targets:
+      - https://github.com/danascape-projects/GardenWatchApp
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
