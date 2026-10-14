@@ -90,6 +90,11 @@ repos:
     targets:
       - https://github.com/danascape-projects/android_device_nothing_Spacewar
 
+  - source: https://github.com/danascape/android_device_asus_X00P
+    branches: [master]
+    targets:
+      - https://github.com/danascape-projects/android_device_asus_X00P
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
