@@ -127,6 +127,11 @@ repos:
     targets:
       - https://github.com/danascape-projects/GardenWatchApp
 
+  - source: https://github.com/danascape/Launcher3
+    branches: [lineage-24.0]
+    targets:
+      - https://github.com/danascape-projects/Launcher3
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
