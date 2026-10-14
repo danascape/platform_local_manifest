@@ -141,11 +141,13 @@ repos:
     branches: [lineage-24.0]
     targets:
       - https://github.com/danascape-projects/android_kernel_nothing_sm7635-modules
+      - https://github.com/nothing-sm7635-devs/android_kernel_nothing_sm7635-modules
 
   - source: https://github.com/danascape/linux-nothing-sm7635-devicetrees
     branches: [lineage-24.0]
     targets:
       - https://github.com/danascape-projects/android_kernel_nothing_sm7635-devicetrees
+      - https://github.com/nothing-sm7635-devs/android_kernel_nothing_sm7635-devicetrees
 
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
