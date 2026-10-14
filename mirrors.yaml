@@ -17,12 +17,15 @@
 #            branches and tags, deleting anything on the target the source lacks
 #
 # tags: true    also push tags (in push/force mode)
+# prune: true   delete branches on the target that are not in `branches`
+#               (push/force mode; mirror mode always prunes)
 #
-# A target can be a plain URL, or a map that overrides url/mode/branches/tags.
+# A target can be a plain URL, or a map that overrides url/mode/branches/tags/prune.
 
 defaults:
   mode: force
   tags: false
+  prune: true
 
 repos:
   - source: https://github.com/danascape/android_device_oneplus_billie

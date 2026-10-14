@@ -42,6 +42,7 @@ class Target:
     mode: str
     branches: list  # list of (src, dst) tuples
     tags: bool
+    prune: bool  # delete target branches that are not in `branches`
 
 
 @dataclass
@@ -83,7 +84,8 @@ def load_config(path):
             if mode != "mirror" and not branches:
                 raise ValueError(f"{where}: target {t['url']} has no branches")
             tags = t.get("tags", r.get("tags", defaults.get("tags", False)))
-            repo.targets.append(Target(t["url"], mode, branches, bool(tags)))
+            prune = t.get("prune", r.get("prune", defaults.get("prune", False)))
+            repo.targets.append(Target(t["url"], mode, branches, bool(tags), bool(prune)))
         if not repo.targets:
             raise ValueError(f"{where}: no targets")
         repos.append(repo)
@@ -157,6 +159,16 @@ def sync_repo(repo, cache_root, env, dry_run):
             specs = [f"{force}refs/heads/{s}:refs/heads/{d}" for s, d in t.branches if s not in missing]
             if t.tags:
                 specs.append(f"{force}refs/tags/*:refs/tags/*")
+            if t.prune:
+                rc, out = g.git("ls-remote", "--heads", t.url, check=False)
+                if rc:
+                    ok = False
+                    log.append(f"  -> {t.url}: FAIL listing branches for prune:\n{out}")
+                    continue
+                # Mapped branches are kept even when skipped as missing on the source.
+                keep = {d for _, d in t.branches}
+                existing = {line.split("refs/heads/", 1)[1] for line in out.splitlines() if "refs/heads/" in line}
+                specs += [f":refs/heads/{b}" for b in sorted(existing - keep)]
             if not specs:
                 log.append(f"  -> {t.url}: nothing to push")
                 continue
