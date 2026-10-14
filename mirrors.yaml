@@ -112,6 +112,16 @@ repos:
     targets:
       - https://github.com/danascape-projects/CureConnectApp
 
+  - source: https://github.com/danascape/furoreScan-backend
+    branches: [main]
+    targets:
+      - https://github.com/danascape-projects/furoreScan-backend
+
+  - source: https://github.com/danascape/furoreScanApp
+    branches: [master]
+    targets:
+      - https://github.com/danascape-projects/furoreScanApp
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
