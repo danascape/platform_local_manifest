@@ -31,6 +31,21 @@ repos:
       - https://github.com/danascape-projects/android_device_oneplus_billie
       - https://github.com/oneplus-sm6350-devs/android_device_oneplus_billie
 
+  - source: https://github.com/danascape/proprietary_vendor_oneplus_billie
+    branches:
+      - lineage-17.1-prebuilt
+      - lineage-17.1
+      - lineage-18.1
+      - lineage-19.1
+      - lineage-20
+      - lineage-21
+      - lineage-22.2
+      - lineage-23.2
+      - lineage-24.0
+    targets:
+      - https://github.com/oneplus-sm6350-devs/proprietary_vendor_oneplus_billie
+      - https://github.com/danascape-projects/proprietary_vendor_oneplus_billie
+
   # Example with overrides:
   # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
   #   branches: [lineage-23.2, lineage-24.0]
