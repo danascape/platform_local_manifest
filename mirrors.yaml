@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: 2026 Saalim Quadri <danascape@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+# Repository mirror map, read by mirror.py.
+#
+# Each entry has one source repo, the branches to take from it, and the
+# targets to push those branches to.
+#
+# branches:
+#   - lineage-23.2               push to the same branch name on the target
+#   - lineage-23.2:main          push source lineage-23.2 to target main
+#
+# mode (set in defaults, per repo, or per target):
+#   push     normal push, fails if the target branch has diverged
+#   force    force-push the listed branches (default, the usual choice for mirrors)
+#   mirror   ignore `branches`; make the target an exact copy of ALL source
+#            branches and tags, deleting anything on the target the source lacks
+#
+# tags: true    also push tags (in push/force mode)
+#
+# A target can be a plain URL, or a map that overrides url/mode/branches/tags.
+
+defaults:
+  mode: force
+  tags: false
+
+repos:
+  - source: https://github.com/danascape/android_device_oneplus_billie
+    branches: [lineage-22.2, lineage-23.2, lineage-24.0]
+    targets:
+      - https://github.com/danascape-projects/android_device_oneplus_billie
+      - https://github.com/oneplus-sm6350-devs/android_device_oneplus_billie
+
+  # Example with overrides:
+  # - source: https://github.com/danascape/android_kernel_oneplus_sm6350
+  #   branches: [lineage-23.2, lineage-24.0]
+  #   targets:
+  #     - https://github.com/oneplus-sm6350-devs/android_kernel_oneplus_sm6350
+  #     - url: https://github.com/danascape-projects/android_kernel_oneplus_sm6350
+  #       mode: mirror
+  #     - url: https://github.com/someone/android_kernel_oneplus_sm6350
+  #       branches: ["lineage-24.0:main"]
+  #       mode: push
